@@ -1,19 +1,24 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DebetCardTest {
-    private static WebDriver driver;
+    static WebDriver driver;
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "drivers/MacOS/chromedriver");
+        WebDriverManager.chromedriver().setup();
+        //System.setProperty("webdriver.chrome.driver", "drivers/MacOS/chromedriver");
     }
 
     @BeforeEach
     void setUp() {
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.setHeadless(true);
+        driver = new ChromeDriver(options);
     }
 
     @AfterAll
