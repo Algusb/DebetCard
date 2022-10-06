@@ -57,7 +57,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DebetCardTest.shouldTestV1">
+  <component name="RunManager" selected="Gradle.DebetCardTest.shouldBadName">
     <configuration name="DebetCardTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -72,6 +72,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;DebetCardTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="DebetCardTest.shouldBadName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;DebetCardTest.shouldBadName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -106,6 +129,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DebetCardTest.shouldBadName" />
         <item itemvalue="Gradle.DebetCardTest.shouldTestV1" />
         <item itemvalue="Gradle.DebetCardTest" />
       </list>
