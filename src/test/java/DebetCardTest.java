@@ -23,7 +23,7 @@ public class DebetCardTest {
     @AfterEach
     void teardown() {
         driver.quit();
-        driver = null;
+//        driver = null;
     }
 
     @Test
