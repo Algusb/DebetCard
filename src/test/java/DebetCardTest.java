@@ -6,12 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DebetCardTest {
-    static WebDriver driver;
+    WebDriver driver;
 
     @BeforeAll
     static void setUpAll() {
         WebDriverManager.chromedriver().setup();
-        //System.setProperty("webdriver.chrome.driver", "drivers/MacOS/chromedriver");
     }
 
     @BeforeEach
@@ -21,8 +20,8 @@ public class DebetCardTest {
         driver = new ChromeDriver(options);
     }
 
-    @AfterAll
-    static void tearDown() {
+    @AfterEach
+    void teardown() {
         driver.quit();
         driver = null;
     }
